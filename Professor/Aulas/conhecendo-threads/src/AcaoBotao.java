@@ -20,6 +20,7 @@ public class AcaoBotao implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         resultado.setText("Aqui é o resultado de uma multiplicação!");
+
     }
 
 }
