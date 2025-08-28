@@ -20,12 +20,13 @@ public class TelaCalculadora {
         JPanel painel = new JPanel();
         painel.add(primeiro);
         painel.add(new JLabel("X"));
-        painel.add(botao);
         painel.add(segundo);
+        painel.add(botao);
         painel.add(resultado);
 
         janela.add(painel);
         janela.setVisible(true);
+        janela.pack();
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
