@@ -1,5 +1,7 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.math.BigInteger;
+
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
@@ -18,7 +20,37 @@ public class AcaoBotao implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        resultado.setText("Aqui é o resultado de uma multiplicadora!");
+
+
+        System.out.println("********Clicou no botão***********");
+
+        Thread thread = new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                Long valor1 = Long.parseLong(primeiro.getText());
+                Long valor2 = Long.parseLong(segundo.getText());
+    
+                BigInteger calculo = new BigInteger("0");
+                for (int i = 0; i < valor1; i++) {
+                  for (int j = 0; j < valor2; j++) {
+                    calculo = calculo.add(new BigInteger("1"));
+                  }
+                }
+    
+                System.out.println("********Terminou Operação***********");
+    
+                resultado.setText(calculo.toString());
+    
+
+
+            }
+            
+        });
+        thread.start();
+    
+         
+
     }
        
 
