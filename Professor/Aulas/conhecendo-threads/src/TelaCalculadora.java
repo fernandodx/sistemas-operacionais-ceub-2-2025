@@ -1,4 +1,5 @@
 
+import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -10,15 +11,14 @@ public class TelaCalculadora {
     public static void criar() {
         JFrame janela = new JFrame("Multiplicação Longa");
 
-        // janela.setLayout(new FlowLayout(FlowLayout.CENTER)); 
+        //Configura o tamanho da tela
+        janela.setLayout(new FlowLayout(FlowLayout.CENTER)); 
        
-
         JTextField primeiro = new JTextField(18);
         JTextField segundo = new JTextField(18);
 
         JButton botao = new JButton(" = ");
         JLabel resultado = new JLabel(" Aguardando... ");
-
     
         JPanel painelEntrada = new JPanel();
         painelEntrada.add(primeiro);
