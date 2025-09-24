@@ -1,0 +1,68 @@
+# Seminário: Sistemas Operacionais
+
+## 1. Ementa
+Este seminário aborda os conceitos fundamentais de **Sistemas Operacionais (SO)**, incluindo suas funções, arquiteturas, gerenciamento de recursos, interfaces e segurança. Serão explorados conceitos teóricos e práticos, com aplicação de exemplos em sistemas modernos como Linux, Windows e Android.
+
+## 2. Objetivos
+- Compreender a função e a importância de um sistema operacional.
+- Identificar os principais componentes e serviços de um SO.
+- Explorar a gestão de processos, memória e armazenamento.
+- Analisar sistemas de arquivos e interfaces.
+- Discutir segurança, concorrência e virtualização.
+- Desenvolver habilidades práticas na administração e monitoramento de SO.
+
+## 3. Tópicos de Estudo
+
+### 3.1 Introdução aos Sistemas Operacionais
+- Definição e objetivos de um SO.
+- História e evolução dos sistemas operacionais.
+- Tipos de SO: monolíticos, microkernel, distribuídos, tempo real.
+- Funções principais: gerenciamento de hardware, software e usuários.
+
+### 3.2 Estrutura e Arquitetura de SO
+- Componentes do SO: kernel, shell, drivers, utilitários.
+- Modos de operação: kernel mode vs user mode.
+- Arquitetura de sistemas monolíticos, camadas e microkernel.
+
+### 3.3 Processos e Threads
+- Conceito de processo e thread.
+- Estados de um processo: new, ready, running, waiting, terminated.
+- Escalonamento de processos: algoritmos e políticas.
+- Comunicação entre processos (IPC).
+- Problemas de concorrência: deadlock e starvation.
+
+### 3.4 Gerenciamento de Memória
+- Tipos de memória: RAM, cache, memória virtual.
+- Gerenciamento de memória: particionamento, paginação, segmentação.
+- Tabela de páginas e swapping.
+- Técnicas de alocação dinâmica e proteção de memória.
+
+### 3.5 Sistemas de Arquivos
+- Estrutura de sistemas de arquivos (FAT, NTFS, EXT).
+- Operações básicas: criação, leitura, gravação, exclusão.
+- Permissões e controle de acesso.
+- Sistemas de arquivos em rede (NFS, SMB).
+
+### 3.6 Gerenciamento de Dispositivos
+- Conceito de I/O e dispositivos de hardware.
+- Drivers e interfaces de dispositivo.
+- Buffering, caching e spooling.
+
+### 3.7 Segurança e Proteção
+- Conceitos de autenticação e autorização.
+- Técnicas de criptografia e proteção de dados.
+- Controle de acesso baseado em usuários e grupos.
+- Políticas de segurança em SO modernos.
+
+### 3.8 Sistemas Distribuídos e Virtualização
+- Conceito de SO distribuído.
+- Comunicação entre máquinas e sincronização.
+- Virtualização: máquinas virtuais e containers.
+- Exemplos: Docker, Kubernetes, Hyper-V, VMware.
+
+
+## 4. Referências
+- SILBERSCHATZ, A.; GALVIN, P.; GAGNE, G. **Operating System Concepts**, 10ª edição.
+- TANENBAUM, A.; BOS, H. **Modern Operating Systems**, 4ª edição.
+- STALLINGS, W. **Operating Systems: Internals and Design Principles**, 9ª edição.
+- Documentação oficial: [Linux](https://www.kernel.org/doc/), [Windows](https://docs.microsoft.com/en-us/windows/).
