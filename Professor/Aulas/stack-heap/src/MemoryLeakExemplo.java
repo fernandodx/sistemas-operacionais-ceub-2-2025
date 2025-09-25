@@ -12,6 +12,8 @@ public class MemoryLeakExemplo {
         System.out.println("Memória comsumida...");
     }
 
+
+
     public static void main(String[] args) {
         MemoryLeakExemplo app = new MemoryLeakExemplo();
         while (true) { 
