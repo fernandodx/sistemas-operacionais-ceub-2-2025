@@ -1,5 +1,7 @@
 # Seminário: Sistemas Operacionais
 
+Data de entrega : 08/11
+
 ## 1. Ementa
 Este seminário aborda os conceitos fundamentais de **Sistemas Operacionais (SO)**, incluindo suas funções, arquiteturas, gerenciamento de recursos, interfaces e segurança. Serão explorados conceitos teóricos e práticos, com aplicação de exemplos em sistemas modernos como Linux, Windows e Android.
 
@@ -13,25 +15,25 @@ Este seminário aborda os conceitos fundamentais de **Sistemas Operacionais (SO)
 
 ## 3. Tópicos de Estudo
 
-### 3.1 Introdução aos Sistemas Operacionais
+### 3.1 Introdução aos Sistemas Operacionais (Bernado)
 - Definição e objetivos de um SO.
 - História e evolução dos sistemas operacionais.
 - Tipos de SO: monolíticos, microkernel, distribuídos, tempo real.
 - Funções principais: gerenciamento de hardware, software e usuários.
 
-### 3.2 Estrutura e Arquitetura de SO
+### 3.2 Estrutura e Arquitetura de SO (Caroline)
 - Componentes do SO: kernel, shell, drivers, utilitários.
 - Modos de operação: kernel mode vs user mode.
 - Arquitetura de sistemas monolíticos, camadas e microkernel.
 
-### 3.3 Processos e Threads
+### 3.3 Processos e Threads (Kauã)
 - Conceito de processo e thread.
 - Estados de um processo: new, ready, running, waiting, terminated.
 - Escalonamento de processos: algoritmos e políticas.
 - Comunicação entre processos (IPC).
 - Problemas de concorrência: deadlock e starvation.
 
-### 3.4 Gerenciamento de Memória
+### 3.4 Gerenciamento de Memória (Breno)
 - Tipos de memória: RAM, cache, memória virtual.
 - Gerenciamento de memória: particionamento, paginação, segmentação.
 - Tabela de páginas e swapping.
@@ -43,12 +45,12 @@ Este seminário aborda os conceitos fundamentais de **Sistemas Operacionais (SO)
 - Permissões e controle de acesso.
 - Sistemas de arquivos em rede (NFS, SMB).
 
-### 3.6 Gerenciamento de Dispositivos
+### 3.6 Gerenciamento de Dispositivos (Tom)
 - Conceito de I/O e dispositivos de hardware.
 - Drivers e interfaces de dispositivo.
 - Buffering, caching e spooling.
 
-### 3.7 Segurança e Proteção
+### 3.7 Segurança e Proteção (Italo)
 - Conceitos de autenticação e autorização.
 - Técnicas de criptografia e proteção de dados.
 - Controle de acesso baseado em usuários e grupos.
