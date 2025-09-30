@@ -14,7 +14,7 @@ public class ExemploStackOverFlow {
 
         try {
 
-            String resultado = concatenarProblematico("Maria", 10000);
+            String resultado = concatenarProblematico("Maria", 100000);
             System.out.println(resultado);
             
         } catch (StackOverflowError e) {
