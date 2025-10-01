@@ -39,7 +39,7 @@ Este seminário aborda os conceitos fundamentais de **Sistemas Operacionais (SO)
 - Tabela de páginas e swapping.
 - Técnicas de alocação dinâmica e proteção de memória.
 
-### 3.5 Sistemas de Arquivos
+### 3.5  (Dayane)
 - Estrutura de sistemas de arquivos (FAT, NTFS, EXT).
 - Operações básicas: criação, leitura, gravação, exclusão.
 - Permissões e controle de acesso.
@@ -56,7 +56,7 @@ Este seminário aborda os conceitos fundamentais de **Sistemas Operacionais (SO)
 - Controle de acesso baseado em usuários e grupos.
 - Políticas de segurança em SO modernos.
 
-### 3.8 Sistemas Distribuídos e Virtualização
+### 3.8 Sistemas Distribuídos e Virtualização (Pedro)
 - Conceito de SO distribuído.
 - Comunicação entre máquinas e sincronização.
 - Virtualização: máquinas virtuais e containers.
