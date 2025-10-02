@@ -39,7 +39,7 @@ Este seminário aborda os conceitos fundamentais de **Sistemas Operacionais (SO)
 - Tabela de páginas e swapping.
 - Técnicas de alocação dinâmica e proteção de memória.
 
-### 3.5  (Dayane)
+### 3.5 Sistemas de Arquivos (Dayane)
 - Estrutura de sistemas de arquivos (FAT, NTFS, EXT).
 - Operações básicas: criação, leitura, gravação, exclusão.
 - Permissões e controle de acesso.
