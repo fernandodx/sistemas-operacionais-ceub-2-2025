@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Broadcaster {
+    private List<EventListener> listeners = new ArrayList<>();
+
+    // Adiciona um novo ouvinte (listener)
+    public void addListener(EventListener listener) {
+        listeners.add(listener);
+    }
+
+    // Remove um ouvinte — importante para evitar memory leak
+    public void removeListener(EventListener listener) {
+        listeners.remove(listener);
+    }
+
+    // Dispara o evento para todos os ouvintes
+    public void broadcast(String message) {
+        for (EventListener listener : listeners) {
+            listener.onEvent(message);
+        }
+    }
+}
