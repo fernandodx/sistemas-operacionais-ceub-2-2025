@@ -1,0 +1,43 @@
+//Um Deadlock (também chamado de impasse ou bloqueio mútuo) é uma situação em que dois ou mais processos ou threads ficam permanentemente bloqueados porque cada um está aguardando um recurso que outro já possui — de modo que nenhum deles consegue prosseguir.
+
+public class DeadlockDemo {
+    private final Object lockA = new Object();
+    private final Object lockB = new Object();
+
+    public void threadOneWork() {
+        synchronized(lockA) {
+            System.out.println(Thread.currentThread().getName() + " adquiriu lockA");
+            // Simula atraso para aumentar a chance de deadlock
+            try { Thread.sleep(100); } catch (InterruptedException e) { /* ignorar */ }
+
+            System.out.println(Thread.currentThread().getName() + " tentando adquirir lockB");
+            synchronized(lockB) {
+                System.out.println(Thread.currentThread().getName() + " adquiriu lockB");
+                // faz algo...
+            }
+        }
+    }
+
+    public void threadTwoWork() {
+        synchronized(lockB) {
+            System.out.println(Thread.currentThread().getName() + " adquiriu lockB");
+            try { Thread.sleep(100); } catch (InterruptedException e) { /* ignorar */ }
+
+            System.out.println(Thread.currentThread().getName() + " tentando adquirir lockA");
+            synchronized(lockA) {
+                System.out.println(Thread.currentThread().getName() + " adquiriu lockA");
+                // faz algo...
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        DeadlockDemo demo = new DeadlockDemo();
+
+        Thread t1 = new Thread(() -> demo.threadOneWork(), "Thread-1");
+        Thread t2 = new Thread(() -> demo.threadTwoWork(), "Thread-2");
+
+        t1.start();
+        t2.start();
+    }
+}
