@@ -1,0 +1,2 @@
+Um deadlock ocorre quando dois ou mais processos estão permanentemente
+esperando por recursos que estão sendo mantidos por outros processos na mesma situação
