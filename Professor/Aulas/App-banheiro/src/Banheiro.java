@@ -66,7 +66,7 @@ public class Banheiro {
             System.out.println(nome + " ...Iniciando a limpeza do banheiro.");
 
             try {
-                Thread.sleep(8*1000);
+                Thread.sleep(86*1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
