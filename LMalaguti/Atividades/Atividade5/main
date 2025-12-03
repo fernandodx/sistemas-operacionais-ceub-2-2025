@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        Broadcaster broadcaster = new Broadcaster();
+
+        Janela janela1 = new Janela("Principal");
+        Janela janela2 = new Janela("Secundária");
+
+        // Registra as janelas como ouvintes
+        broadcaster.addListener(janela1);
+        broadcaster.addListener(janela2);
+
+        // Dispara alguns eventos
+        broadcaster.broadcast("Sistema iniciado!");
+        broadcaster.broadcast("Nova mensagem recebida.");
+
+        // Remove uma janela (boa prática para evitar memory leak)
+        broadcaster.removeListener(janela2);
+
+        broadcaster.broadcast("Apenas a janela principal deve ouvir este evento.");
+    }
+}

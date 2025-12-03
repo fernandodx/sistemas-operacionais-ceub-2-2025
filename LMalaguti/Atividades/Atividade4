@@ -1,0 +1,18 @@
+#!/bin/bash
+# Script para exibir informações básicas do sistema
+
+echo "Data e Hora atuais: $(date)"
+echo "Usuário logado: $(whoami)"
+echo "Diretório atual: $(pwd)"
+
+echo ""
+echo "Espaço livre no disco:"
+df -h /
+
+#cole e salve
+#touch info.sh
+#nano info.sh 
+
+#comandos no terminal
+#chmod +x info.sh
+#./info.sh
